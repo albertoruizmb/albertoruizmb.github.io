@@ -1,10 +1,18 @@
-theme: jekyll-theme-architect
-# remote_theme: pages-themes/architect@v0.2.0
-# plugins:
-# - jekyll-remote-theme # add this line to the plugins list if you already have one
-# gem "github-pages", group: :jekyll_plugins
+title: "Mi Sitio con Architect"
+description: "Este es mi sitio GitHub Pages usando el tema Architect"
+baseurl: "" # Deja vacío si es un repositorio de usuario o organización (username.github.io). Usa "/repositorio" si es un repositorio de proyecto.
+url: "https://albertoruizmb.github.io" # Reemplaza con la URL de tu sitio.
 
-title: [The title of your site]
-description: [A short description of your site's purpose]
-# show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
-# google_analytics: [Your Google Analytics tracking ID]
+# Tema configurado para Architect
+theme: jekyll-theme-architect
+
+# Información del autor (opcional)
+author:
+  name: "Alberto Ruiz"
+  email: "albertoruizmb@gmail.com"
+
+# Opciones para navegación (opcional, depende de cómo estructures el sitio)
+# Configuración de menú de navegación
+header_pages:
+  - index.html
+  - about.md
