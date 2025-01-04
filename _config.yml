@@ -7,9 +7,9 @@ url: "https://albertoruizmb.github.io" # Reemplaza con la URL de tu sitio.
 theme: jekyll-theme-architect
 
 # Información del autor (opcional)
-author:
-  name: "Alberto Ruiz"
-  email: "albertoruizmb@gmail.com"
+# author:
+#   name: ""
+#   email: ""
 
 # Opciones para navegación (opcional, depende de cómo estructures el sitio)
 # Configuración de menú de navegación
