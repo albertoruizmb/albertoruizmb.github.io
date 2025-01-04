@@ -14,5 +14,5 @@ author:
 # Opciones para navegación (opcional, depende de cómo estructures el sitio)
 # Configuración de menú de navegación
 header_pages:
-  - index.html
+  - index.md
   - about.md
