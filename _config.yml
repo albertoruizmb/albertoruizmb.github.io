@@ -16,3 +16,14 @@ author:
 header_pages:
   - index.md
   - about.md
+
+# Configuración del menú de navegación
+navigation:
+  - title: "Inicio"
+    url: "/"
+  - title: "Acerca de mí"
+    url: "/about/"
+  - title: "Proyectos"
+    url: "/projects/"
+  - title: "Contacto"
+    url: "/contact/"
