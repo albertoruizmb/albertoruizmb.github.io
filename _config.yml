@@ -4,7 +4,7 @@ baseurl: "" # Deja vacío si es un repositorio de usuario o organización (usern
 url: "https://albertoruizmb.github.io" # Reemplaza con la URL de tu sitio.
 
 # Tema configurado para Architect
-theme: jekyll-theme-architect
+theme: jekyll-theme-minimal
 
 # Información del autor (opcional)
 # author:
