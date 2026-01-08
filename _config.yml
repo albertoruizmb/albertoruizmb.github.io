@@ -1,29 +1,24 @@
-title: "Mi Sitio con Architect"
-description: "Este es mi sitio GitHub Pages usando el tema Architect"
-baseurl: "" # Deja vacío si es un repositorio de usuario o organización (username.github.io). Usa "/repositorio" si es un repositorio de proyecto.
-url: "https://albertoruizmb.github.io" # Reemplaza con la URL de tu sitio.
+title: "Alberto Ruiz"
+description: "Arquitectura, Cloud e IA — notas técnicas y aprendizajes"
+url: "https://albertoruizmb.github.io"
+baseurl: ""   # repo tipo username.github.io -> vacío
 
-# Tema configurado para Architect
+# Elige SOLO uno:
 theme: jekyll-theme-minimal
+# remote_theme: pages-themes/minimal@v0.2.0  # alternativa si quisieras remote_theme
 
-# Información del autor (opcional)
-# author:
-#   name: ""
-#   email: ""
+# Blog settings
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
 
-# Opciones para navegación (opcional, depende de cómo estructures el sitio)
-# Configuración de menú de navegación
+# (Opcional) si quieres que se vean extractos en el home
+show_excerpts: true
+
+# Navegación (esto SÍ lo usa GitHub Pages con temas compatibles)
 header_pages:
   - index.md
   - about.md
 
-# Configuración del menú de navegación
-navigation:
-  - title: "Inicio"
-    url: "/"
-  - title: "Acerca de mí"
-    url: "/about/"
-  - title: "Proyectos"
-    url: "/projects/"
-  - title: "Contacto"
-    url: "/contact/"
+# (Opcional) Variables propias (por si luego las usas en layouts)
+author:
+  name: "Alberto Ruiz"
