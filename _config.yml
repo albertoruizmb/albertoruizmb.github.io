@@ -1,23 +1,26 @@
 title: "Alberto Ruiz"
-description: "Arquitectura, Cloud e IA — notas técnicas y aprendizajes"
+description: "Arquitectura, Cloud e Inteligencia Artificial. Notas técnicas."
 url: "https://albertoruizmb.github.io"
-baseurl: ""   # repo tipo username.github.io -> vacío
+baseurl: ""
 
+# Tema
 theme: jekyll-theme-minimal
-# remote_theme: pages-themes/minimal@v0.2.0  # alternativa para remote_theme
 
-# Blog settings
+# Blog
 markdown: kramdown
-permalink: /:categories/:year/:month/:day/:title/
-
-# (Opcional) ver extractos en el home
+permalink: /blog/:year/:month/:day/:title/
 show_excerpts: true
 
-# Navegación (sólo GitHub Pages con temas compatibles)
+# Navegación superior
 header_pages:
   - index.md
   - about.md
+  - blog.md
 
-# (Opcional) Variables propias (para uso posterior en layouts)
+# Autor
 author:
   name: "Alberto Ruiz"
+
+# Ajustes seguros para GitHub Pages
+plugins:
+  - jekyll-feed
