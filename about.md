@@ -5,14 +5,14 @@ title: Sobre mí
 
 ## Sobre mí
 
-Soy ingeniero informático con experiencia en:
+Soy ingeniero informático y arquitecto de soluciones. Trabajo en la intersección entre
+**estrategia tecnológica** y **ejecución**: convertir necesidades de negocio en arquitectura,
+equipos y entregables que funcionan.
 
-- Arquitectura de soluciones
-- Cloud (Azure principalmente)
-- IA aplicada a producto y negocio
-- Dirección técnica y preventa
+Áreas habituales:
+- Arquitectura cloud (Azure) y gobierno
+- IA aplicada a producto (RAG, agentes, búsqueda, evaluación)
+- Ingeniería de software y estandarización (ALM, CI/CD, calidad)
 
-Este blog no es marketing:  
-es **pensamiento técnico estructurado**.
+Este blog es un espacio para compartir **criterio técnico** con ejemplos prácticos.
 
-LinkedIn y otros enlaces llegarán aquí.
