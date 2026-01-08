@@ -14,8 +14,12 @@ show_excerpts: true
 # Navegación superior
 header_pages:
   - index.md
-  - about.md
   - blog.md
+  - arquitectura.md
+  - cloud.md
+  - ia.md
+  - opinion.md
+  - about.md
 
 # Autor
 author: "Alberto Ruiz"
