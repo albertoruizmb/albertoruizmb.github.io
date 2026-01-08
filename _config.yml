@@ -18,8 +18,7 @@ header_pages:
   - blog.md
 
 # Autor
-author:
-  name: "Alberto Ruiz"
+author: "Alberto Ruiz"
 
 # Ajustes seguros para GitHub Pages
 plugins:
