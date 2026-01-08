@@ -1,6 +1,5 @@
 ---
-layout: default
-title: Bienvenido
+layout: home
+title: Blog
 ---
-# ¡Hola Mundo!
-Bienvenido a mi sitio web usando el tema Architect.
+
