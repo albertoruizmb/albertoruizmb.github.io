@@ -3,14 +3,15 @@ layout: default
 title: Inicio
 ---
 
-# Hola, soy Alberto
+# Alberto Ruiz
 
-Arquitecto de software con foco en **Cloud, IA y sistemas complejos**.  
-Este sitio es un **blog técnico y cuaderno de trabajo** donde comparto:
+Arquitectura de soluciones y plataformas con foco en **Cloud, IA e ingeniería de software**.
 
-- Arquitectura cloud y enterprise
-- Inteligencia Artificial aplicada
-- Ingeniería de software
-- Criterio técnico + experiencia real
+Este sitio es mi **cuaderno técnico**: ideas estructuradas, decisiones de arquitectura,
+patrones, trade-offs y aprendizajes reales.
 
-Puedes empezar por el [blog](/blog) o saber más [sobre mí](/about).
+- **Cloud & Platform Engineering** (principalmente Azure)
+- **IA aplicada** (búsqueda, RAG, agentes, observabilidad)
+- **Arquitectura empresarial** (gobierno, estándares, escalabilidad)
+
+Empieza por el **[blog](/blog)** o lee **[sobre mí](/about)**.
