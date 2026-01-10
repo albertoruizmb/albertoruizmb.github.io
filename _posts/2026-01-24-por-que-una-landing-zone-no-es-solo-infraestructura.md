@@ -5,6 +5,7 @@ date: 2026-01-24
 categories: [cloud]
 tags: [landing-zone, azure, cloud, gobierno, arquitectura]
 author: "Alberto Ruiz"
+excerpt: "En muchos proyectos cloud, la landing zone se trata como un paso previo"
 ---
 
 ## Contexto
