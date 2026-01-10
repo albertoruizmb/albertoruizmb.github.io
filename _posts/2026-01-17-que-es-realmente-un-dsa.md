@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qué es realmente un DSA (y por qué casi nadie lo usa bien)"
+title: "Qué es realmente un DSA (y por qué muchas veces no se usa bien)"
 date: 2026-01-17
 categories: [arquitectura]
 tags: [dsa, documentacion, arquitectura, decisiones]
