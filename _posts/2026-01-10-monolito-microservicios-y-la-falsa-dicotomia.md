@@ -5,6 +5,8 @@ date: 2026-01-10
 categories: [arquitectura]
 tags: [monolito, microservicios, arquitectura, decisiones]
 author: "Alberto Ruiz"
+excerpt: "En casi todas las conversaciones sobre arquitectura aparece la misma pregunta:  
+\“¿Monolito o microservicios?\”"
 ---
 
 ## Contexto
