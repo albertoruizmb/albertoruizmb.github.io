@@ -5,6 +5,7 @@ date: 2026-01-17
 categories: [arquitectura]
 tags: [dsa, documentacion, arquitectura, decisiones]
 author: "Alberto Ruiz"
+excerpt: "En muchos proyectos se habla de “hacer un DSA” como si fuera un trámite más."
 ---
 
 ## Contexto
