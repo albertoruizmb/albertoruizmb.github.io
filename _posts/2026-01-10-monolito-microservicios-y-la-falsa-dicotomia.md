@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Monolito, microservicios y la falsa dicotomía"
-date: 2026-01-05
+date: 2026-01-10
 categories: [arquitectura]
 tags: [monolito, microservicios, arquitectura, decisiones]
 author: "Alberto Ruiz"
