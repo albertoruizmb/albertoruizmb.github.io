@@ -5,13 +5,28 @@ title: Inicio
 
 # Alberto Ruiz
 
-Arquitectura de soluciones y plataformas con foco en **Cloud, IA e ingeniería de software**.
+Arquitectura de soluciones, **Cloud** e **Inteligencia Artificial**.
 
-Este sitio es mi **cuaderno técnico**: ideas estructuradas, decisiones de arquitectura,
-patrones, trade-offs y aprendizajes reales.
+Este sitio es un **cuaderno técnico y de criterio**:  
+decisiones, arquitectura y experiencia real en sistemas complejos.
 
-- **Cloud & Platform Engineering** (principalmente Azure)
-- **IA aplicada** (búsqueda, RAG, agentes, observabilidad)
-- **Arquitectura empresarial** (gobierno, estándares, escalabilidad)
+---
 
-Empieza por el **[blog](/blog)** o lee **[sobre mí](/about)**.
+## Explora por tema
+
+- [Arquitectura](/arquitectura) — Diseño, decisiones y trade-offs  
+- [Cloud](/cloud) — Plataformas, gobierno y operación  
+- [IA](/ia) — RAG, agentes y sistemas en producción  
+- [Opinión](/opinion) — Reflexión técnica y liderazgo  
+
+---
+
+## Últimos artículos
+
+<ul>
+{% for post in site.posts limit:5 %}
+  <li>
+    <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} — {{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
