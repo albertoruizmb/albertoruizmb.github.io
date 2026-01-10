@@ -3,9 +3,7 @@ layout: default
 title: Inicio
 ---
 
-# Alberto Ruiz
-
-Arquitectura de soluciones, **Cloud** e **Inteligencia Artificial**.
+# Arquitectura de soluciones, Cloud e Inteligencia Artificial
 
 Este sitio es un **cuaderno técnico y de criterio**.
 
