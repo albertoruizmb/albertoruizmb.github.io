@@ -7,17 +7,17 @@ title: Inicio
 
 Arquitectura de soluciones, **Cloud** e **Inteligencia Artificial**.
 
-Este sitio es un **cuaderno técnico y de criterio**:  
-decisiones, arquitectura y experiencia real en sistemas complejos.
+Este sitio es un **cuaderno técnico y de criterio**.
 
 ---
 
-## Explora por tema
+## Explora
 
-- [Arquitectura](/arquitectura) — Diseño, decisiones y trade-offs  
-- [Cloud](/cloud) — Plataformas, gobierno y operación  
-- [IA](/ia) — RAG, agentes y sistemas en producción  
-- [Opinión](/opinion) — Reflexión técnica y liderazgo  
+- [Blog](/blog)
+- [Arquitectura](/arquitectura)
+- [Cloud](/cloud)
+- [IA](/ia)
+- [Opinión](/opinion)
 
 ---
 
