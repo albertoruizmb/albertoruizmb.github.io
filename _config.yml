@@ -27,3 +27,18 @@ author: "Alberto Ruiz"
 # Ajustes seguros para GitHub Pages
 plugins:
   - jekyll-feed
+
+# Localización
+lang: es
+timezone: Europe/Madrid
+
+# SEO
+title_separator: " — "
+tagline: "Arquitectura, Cloud e Inteligencia Artificial"
+description: "Arquitectura de soluciones, cloud e IA explicadas desde experiencia real"
+
+# Social
+social:
+  name: Alberto Ruiz
+  links:
+    - https://github.com/albertoruizmb
