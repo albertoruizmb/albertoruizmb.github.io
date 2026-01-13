@@ -13,7 +13,7 @@ title: Home
 - [Opinion](/en/opinion)
 - [About](/en/about)
 
-  o
+  or
 
 - [Search...](/en/search)
   
