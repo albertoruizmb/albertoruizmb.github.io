@@ -23,10 +23,10 @@ Este blog es un espacio para compartir **criterio técnico** con ejemplos práct
 ### Más sobre mí
 
 - **LinkedIn**  
-  https://www.linkedin.com/in/albertoruizmb
+  [https://www.linkedin.com/in/albertoruizmb](https://www.linkedin.com/in/albertoruizmb)
 
 - **GitHub**  
-  https://github.com/albertoruizmb
+  [https://github.com/albertoruizmb](https://github.com/albertoruizmb)
 
 ---
 

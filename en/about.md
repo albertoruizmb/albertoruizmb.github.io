@@ -23,10 +23,10 @@ This blog is a place to share **technical judgement** through practical examples
 ### More about me
 
 - **LinkedIn**  
-  https://www.linkedin.com/in/albertoruizmb
+  [https://www.linkedin.com/in/albertoruizmb](https://www.linkedin.com/in/albertoruizmb)
 
 - **GitHub**  
-  https://github.com/albertoruizmb
+  [https://github.com/albertoruizmb](https://github.com/albertoruizmb)
 
 ---
 
