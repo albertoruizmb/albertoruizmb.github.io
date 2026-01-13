@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------
+   Custom UI tweaks (GitHub Pages safe)
+   ------------------------------------------------------------ */
+
+/* Theme toggle button (fixed, top-right) */
+#theme-toggle {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  z-index: 9999;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.85);
+
+  /* Nice glass effect (safe fallback) */
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+
+  cursor: pointer;
+
+  font-size: 18px;
+  line-height: 1;
+
+  display: grid;
+  place-items: center;
+
+  /* Reduce tap highlight on mobile */
+  -webkit-tap-highlight-color: transparent;
+
+  /* Smooth transitions */
+  transition: background 160ms ease, border-color 160ms ease, transform 120ms ease;
+}
+
+#theme-toggle:hover {
+  transform: translateY(-1px);
+}
+
+#theme-toggle:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* Accessible focus ring */
+#theme-toggle:focus {
+  outline: none;
+}
+#theme-toggle:focus-visible {
+  outline: 3px solid rgba(122, 180, 255, 0.7);
+  outline-offset: 3px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  #theme-toggle {
+    transition: none;
+  }
+}

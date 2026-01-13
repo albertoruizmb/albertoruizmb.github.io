@@ -1,0 +1,94 @@
+{% comment %}
+Post navigation (minimal + clean)
+- Prefers language flags computed in default.html: is_es / is_en
+- Fallbacks to URL prefix if needed
+{% endcomment %}
+
+{%- assign lang_is_es = is_es -%}
+{%- if lang_is_es == nil -%}
+  {%- assign purl = page.url | default: "/" | replace: ".html", "" -%}
+  {%- assign lang_is_es = false -%}
+  {%- if purl == "/es" or purl == "/es/" or purl contains "/es/" -%}
+    {%- assign lang_is_es = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+{% if lang_is_es %}
+  {% assign lang_prefix = "/es" %}
+  {% assign label_prev = "← Más reciente" %}
+  {% assign label_next = "Más antiguo →" %}
+  {% assign label_back_blog = "Volver al blog" %}
+  {% assign label_back_cat = "Volver a" %}
+{% else %}
+  {% assign lang_prefix = "/en" %}
+  {% assign label_prev = "← Newer" %}
+  {% assign label_next = "Older →" %}
+  {% assign label_back_blog = "Back to blog" %}
+  {% assign label_back_cat = "Back to" %}
+{% endif %}
+
+{% assign cat = page.categories | first %}
+
+{% assign cat_path = lang_prefix | append: "/blog" %}
+{% assign cat_label = "Blog" %}
+
+{% if cat == "arquitectura" %}
+  {% if lang_is_es %}
+    {% assign cat_path = "/es/arquitectura" %}
+    {% assign cat_label = "Arquitectura" %}
+  {% else %}
+    {% assign cat_path = "/en/architecture" %}
+    {% assign cat_label = "Architecture" %}
+  {% endif %}
+{% elsif cat == "cloud" %}
+  {% if lang_is_es %}
+    {% assign cat_path = "/es/cloud" %}
+  {% else %}
+    {% assign cat_path = "/en/cloud" %}
+  {% endif %}
+  {% assign cat_label = "Cloud" %}
+{% elsif cat == "ia" %}
+  {% if lang_is_es %}
+    {% assign cat_path = "/es/ia" %}
+    {% assign cat_label = "IA" %}
+  {% else %}
+    {% assign cat_path = "/en/ai" %}
+    {% assign cat_label = "AI" %}
+  {% endif %}
+{% elsif cat == "opinion" %}
+  {% if lang_is_es %}
+    {% assign cat_path = "/es/opinion" %}
+    {% assign cat_label = "Opinión" %}
+  {% else %}
+    {% assign cat_path = "/en/opinion" %}
+    {% assign cat_label = "Opinion" %}
+  {% endif %}
+{% endif %}
+
+<hr />
+
+<nav style="margin-top:1.25rem;">
+  <!-- Row 1: prev / next -->
+  <div style="display:flex; justify-content:space-between; gap:1.25rem; flex-wrap:wrap;">
+    <div style="flex:1; min-width:260px;">
+      {% if page.previous %}
+        <div style="font-size:.9rem; opacity:.75; margin-bottom:.25rem;">{{ label_prev }}</div>
+        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+      {% endif %}
+    </div>
+
+    <div style="flex:1; min-width:260px; text-align:right;">
+      {% if page.next %}
+        <div style="font-size:.9rem; opacity:.75; margin-bottom:.25rem;">{{ label_next }}</div>
+        <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Row 2: centered back links -->
+  <div style="margin-top:1rem; text-align:center;">
+    <a href="{{ cat_path }}">{{ label_back_cat }} {{ cat_label }}</a>
+    <span style="opacity:.5; padding:0 .5rem;">·</span>
+    <a href="{{ lang_prefix }}/blog">{{ label_back_blog }}</a>
+  </div>
+</nav>

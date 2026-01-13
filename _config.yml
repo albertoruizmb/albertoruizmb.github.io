@@ -1,0 +1,41 @@
+title: "Alberto Ruiz"
+description: "Arquitectura de soluciones, Cloud e Inteligencia Artificial."
+url: "https://albertoruizmb.github.io"
+baseurl: ""
+
+# Tema
+theme: jekyll-theme-minimal
+
+# Blog
+markdown: kramdown
+show_excerpts: true
+future: false
+
+# ✅ Colecciones por idioma (GitHub Pages safe)
+collections:
+  es_posts:
+    output: true
+    permalink: /es/blog/:year/:month/:day/:slug/
+  en_posts:
+    output: true
+    permalink: /en/blog/:year/:month/:day/:slug/
+
+# Autor
+author: "Alberto Ruiz"
+
+# Plugins permitidos en GitHub Pages
+plugins:
+  - jekyll-feed
+
+# Localización
+timezone: Europe/Madrid
+
+# SEO / metadata
+title_separator: " — "
+tagline: "Arquitectura, Cloud e Inteligencia Artificial"
+
+# Social
+social:
+  name: Alberto Ruiz
+  links:
+    - https://github.com/albertoruizmb

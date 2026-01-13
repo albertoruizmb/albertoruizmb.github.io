@@ -1,0 +1,71 @@
+/* ------------------------------------------------------------
+   Dark theme (driven by: html[data-theme="dark"])
+   ------------------------------------------------------------ */
+
+html[data-theme="dark"] {
+  background: #0e0e0e;
+  color: #e5e5e5;
+}
+
+html[data-theme="dark"] body {
+  background: #0e0e0e;
+  color: #e5e5e5;
+}
+
+/* Text */
+html[data-theme="dark"] p,
+html[data-theme="dark"] li {
+  color: #d0d0d0;
+}
+
+html[data-theme="dark"] small {
+  color: #9a9a9a;
+}
+
+/* Headings */
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+  color: #ffffff;
+}
+
+/* Links */
+html[data-theme="dark"] a {
+  color: #7ab4ff;
+}
+html[data-theme="dark"] a:hover {
+  color: #9ac7ff;
+}
+
+/* Rules / separators */
+html[data-theme="dark"] hr {
+  border-color: #333;
+}
+
+/* Bold / emphasis (fix: bold was “too dark”) */
+html[data-theme="dark"] strong,
+html[data-theme="dark"] b {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Keep emphasis readable */
+html[data-theme="dark"] em {
+  color: #f0f0f0;
+}
+
+/* Optional: improve code readability if you use inline code / blocks */
+html[data-theme="dark"] code,
+html[data-theme="dark"] pre {
+  color: #eaeaea;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Theme toggle button when dark */
+html[data-theme="dark"] #theme-toggle {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(20, 20, 20, 0.75);
+}

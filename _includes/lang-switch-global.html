@@ -1,0 +1,117 @@
+{% comment %}
+Global language switcher (GitHub Pages safe)
+- Uses url/is_es/is_en computed in default.html
+- Posts: match by slug across collections
+- Pages: map known routes
+{% endcomment %}
+
+{% assign es_url = "/es" %}
+{% assign en_url = "/en" %}
+
+{% if page.collection == "es_posts" %}
+  {% assign es_url = page.url %}
+  {% assign match = site.en_posts | where: "slug", page.slug | first %}
+  {% if match %}{% assign en_url = match.url %}{% endif %}
+
+{% elsif page.collection == "en_posts" %}
+  {% assign en_url = page.url %}
+  {% assign match = site.es_posts | where: "slug", page.slug | first %}
+  {% if match %}{% assign es_url = match.url %}{% endif %}
+
+{% else %}
+  {% comment %} PAGES: map between ES and EN equivalents {% endcomment %}
+
+  {% if url == "/" %}
+    {% assign es_url = "/es" %}
+    {% assign en_url = "/en" %}
+
+  {% elsif url == "/es" or url == "/es/" %}
+    {% assign es_url = "/es" %}
+    {% assign en_url = "/en" %}
+
+  {% elsif url == "/en" or url == "/en/" %}
+    {% assign es_url = "/es" %}
+    {% assign en_url = "/en" %}
+
+  {% elsif url == "/es/blog" or url == "/es/blog/" %}
+    {% assign es_url = "/es/blog" %}
+    {% assign en_url = "/en/blog" %}
+
+  {% elsif url == "/en/blog" or url == "/en/blog/" %}
+    {% assign es_url = "/es/blog" %}
+    {% assign en_url = "/en/blog" %}
+
+  {% elsif url == "/es/arquitectura" or url == "/es/arquitectura/" %}
+    {% assign es_url = "/es/arquitectura" %}
+    {% assign en_url = "/en/architecture" %}
+
+  {% elsif url == "/en/architecture" or url == "/en/architecture/" %}
+    {% assign es_url = "/es/arquitectura" %}
+    {% assign en_url = "/en/architecture" %}
+
+  {% elsif url == "/es/cloud" or url == "/es/cloud/" %}
+    {% assign es_url = "/es/cloud" %}
+    {% assign en_url = "/en/cloud" %}
+
+  {% elsif url == "/en/cloud" or url == "/en/cloud/" %}
+    {% assign es_url = "/es/cloud" %}
+    {% assign en_url = "/en/cloud" %}
+
+  {% elsif url == "/es/ia" or url == "/es/ia/" %}
+    {% assign es_url = "/es/ia" %}
+    {% assign en_url = "/en/ai" %}
+
+  {% elsif url == "/en/ai" or url == "/en/ai/" %}
+    {% assign es_url = "/es/ia" %}
+    {% assign en_url = "/en/ai" %}
+
+  {% elsif url == "/es/opinion" or url == "/es/opinion/" %}
+    {% assign es_url = "/es/opinion" %}
+    {% assign en_url = "/en/opinion" %}
+
+  {% elsif url == "/en/opinion" or url == "/en/opinion/" %}
+    {% assign es_url = "/es/opinion" %}
+    {% assign en_url = "/en/opinion" %}
+
+  {% elsif url == "/es/about" or url == "/es/about/" %}
+    {% assign es_url = "/es/about" %}
+    {% assign en_url = "/en/about" %}
+
+  {% elsif url == "/en/about" or url == "/en/about/" %}
+    {% assign es_url = "/es/about" %}
+    {% assign en_url = "/en/about" %}
+
+  {% elsif url == "/es/search" or url == "/es/search/" %}
+    {% assign es_url = "/es/search" %}
+    {% assign en_url = "/en/search" %}
+
+  {% elsif url == "/en/search" or url == "/en/search/" %}
+    {% assign es_url = "/es/search" %}
+    {% assign en_url = "/en/search" %}
+
+  {% else %}
+    {% comment %} Generic fallback: swap prefix if present {% endcomment %}
+    {% if is_es %}
+      {% assign es_url = url %}
+      {% assign en_url = url | replace_first: "/es", "/en" %}
+    {% elsif is_en %}
+      {% assign en_url = url %}
+      {% assign es_url = url | replace_first: "/en", "/es" %}
+    {% else %}
+      {% assign es_url = "/es" %}
+      {% assign en_url = "/en" %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% comment %} Post fallback if translation missing {% endcomment %}
+{% if page.collection == "es_posts" and en_url == nil %}{% assign en_url = "/en" %}{% endif %}
+{% if page.collection == "en_posts" and es_url == nil %}{% assign es_url = "/es" %}{% endif %}
+
+<p style="margin: 0.75rem 0 1rem 0;">
+  <strong>
+    <a href="{{ es_url }}" onclick="try{localStorage.setItem('site_lang','es');}catch(e){}">ES</a>
+    |
+    <a href="{{ en_url }}" onclick="try{localStorage.setItem('site_lang','en');}catch(e){}">EN</a>
+  </strong>
+</p>

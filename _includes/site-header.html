@@ -1,0 +1,25 @@
+{% comment %}
+Site header (language-aware)
+- Uses is_es / is_en computed in default.html
+- Clicking "Alberto Ruiz" returns to current language home
+{% endcomment %}
+
+{% if is_es %}
+  {% assign home = "/es" %}
+{% elsif is_en %}
+  {% assign home = "/en" %}
+{% else %}
+  {% assign home = "/" %}
+{% endif %}
+
+<div style="margin: 0 0 1.25rem 0;">
+  <h1 style="margin:0;">
+    <a href="{{ home }}" style="text-decoration:none;">Alberto Ruiz</a>
+  </h1>
+
+  {% if is_es %}
+    <p style="margin:.35rem 0 0 0;">Arquitectura de soluciones, Cloud e Inteligencia Artificial.</p>
+  {% else %}
+    <p style="margin:.35rem 0 0 0;">Solutions architecture, Cloud and Artificial Intelligence.</p>
+  {% endif %}
+</div>
