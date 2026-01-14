@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to the blog"
-date: 2026-01-01
+date: 2026-01-16
 slug: welcome
 categories: [blog]
 tags: [architecture, cloud, ai]

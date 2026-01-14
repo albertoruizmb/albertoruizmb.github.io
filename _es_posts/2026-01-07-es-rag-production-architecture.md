@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "La arquitectura real de un sistema RAG en producción"
-date: 2026-01-07
+date: 2026-01-16
 slug: rag-production-architecture
 categories: [ia]
 tags: [rag, ia, arquitectura, llm, produccion]

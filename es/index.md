@@ -22,8 +22,8 @@ title: Inicio
 ## Últimos artículos
 
 <ul>
-{% assign now_ts = site.time | date: "%s" %}
 {% assign posts_es = site.es_posts | sort: "date" | reverse %}
+{% assign now_ts = site.time | date: "%s" %}
 {% assign shown = 0 %}
 
 {% for post in posts_es %}
@@ -32,6 +32,10 @@ title: Inicio
   {% assign post_ts = post.date | date: "%s" %}
   {% assign show_post = true %}
 
+  {% comment %}
+  When future:false (site.future is falsy), hide posts dated in the future.
+  When future:true, show them.
+  {% endcomment %}
   {% unless site.future %}
     {% if post_ts > now_ts %}
       {% assign show_post = false %}
@@ -40,9 +44,7 @@ title: Inicio
 
   {% if show_post %}
     {% assign shown = shown | plus: 1 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} — {{ post.title }}</a>
-    </li>
+    <li><a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} — {{ post.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>

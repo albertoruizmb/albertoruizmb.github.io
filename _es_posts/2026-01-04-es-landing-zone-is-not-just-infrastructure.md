@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Por qué una landing zone no es solo infraestructura"
-date: 2026-01-04
+date: 2026-01-16
 slug: landing-zone-is-not-just-infrastructure
 categories: [cloud]
 tags: [landing-zone, azure, cloud, gobierno, arquitectura]
