@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Por qué los copilots no escalan sin arquitectura"
-date: 2026-01-15
+date: 2026-01-16
 slug: copilots-need-architecture
 categories: [ia]
 tags: [copilot, ia, arquitectura, productividad, organizacion]
