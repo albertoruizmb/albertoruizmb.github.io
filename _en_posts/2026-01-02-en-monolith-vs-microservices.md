@@ -21,7 +21,10 @@ A distributed system is not simply a system that has been split apart. It is a s
 
 That is why architecture should not start with technologies, but with **context**. Three variables matter more than any pattern: the maturity and size of the team, the volatility of the business domain, and the organisation’s real operational capability (CI/CD, observability and governance). Microservices work when the **organisation** can operate like a distributed system, not when code is merely split across repositories.
 
-This aligns perfectly with Conway’s Law: systems reflect the structure of the organisations that build them. If you have a small team, fast change cycles and little platform support, a distributed architecture is a very effective way to slow everything down.
+This aligns perfectly with Conway’s Law:
+> systems reflect the structure of the organisations that build them.
+
+If you have a small team, fast change cycles and little platform support, a distributed architecture is a very effective way to slow everything down.
 
 A well-modularised monolith can scale for years without becoming a problem. A poorly governed set of microservices becomes a problem from the very first month.
 
