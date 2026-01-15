@@ -6,9 +6,7 @@ title: Sobre mí
 
 ## Sobre mí
 
-Soy ingeniero informático y arquitecto de soluciones. Trabajo en la intersección entre
-**estrategia tecnológica** y **ejecución**: convertir necesidades de negocio en arquitectura,
-equipos y entregables que funcionan.
+Soy ingeniero informático y arquitecto de soluciones. Trabajo en la intersección entre **estrategia tecnológica** y **ejecución**: convertir necesidades de negocio en arquitectura, equipos y entregables que funcionan.
 
 Áreas habituales:
 

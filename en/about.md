@@ -6,9 +6,7 @@ title: About
 
 ## About
 
-I am a software engineer and solutions architect. I work at the intersection of  
-**technology strategy** and **execution**: turning business needs into architecture,  
-teams and deliverables that actually work.
+I am a software engineer and solutions architect. I work at the intersection of **technology strategy** and **execution**: turning business needs into architecture, teams and deliverables that actually work.
 
 Typical areas:
 

@@ -6,8 +6,7 @@ title: IA
 
 ## Inteligencia Artificial
 
-IA aplicada a producto y arquitectura: RAG, agentes, búsqueda,
-evaluación y decisiones técnicas reales.
+IA aplicada a producto y arquitectura: RAG, agentes, búsqueda, evaluación y decisiones técnicas reales.
 
 <ul>
 {% assign posts_es = site.es_posts

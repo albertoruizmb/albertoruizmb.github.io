@@ -6,8 +6,7 @@ title: AI
 
 ## Artificial Intelligence
 
-AI applied to products and architecture: RAG, agents, search,  
-evaluation and real technical decisions.
+AI applied to products and architecture: RAG, agents, search, evaluation and real technical decisions.
 
 <ul>
 {% assign posts_en = site.en_posts

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why copilots don’t scale without architecture"
-date: 2026-01-16
+date: 2026-01-15
 slug: copilots-need-architecture
 categories: [ia]
 tags: [copilot, ai, architecture, productivity, organization]

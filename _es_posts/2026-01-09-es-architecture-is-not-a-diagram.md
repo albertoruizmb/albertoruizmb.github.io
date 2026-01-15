@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "La arquitectura no es un diagrama"
-date: 2026-01-16
+date: 2026-01-09
 slug: architecture-is-not-a-diagram
 categories: [opinion]
 tags: [arquitectura, liderazgo, decisiones]

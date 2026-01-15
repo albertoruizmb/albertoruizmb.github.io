@@ -6,11 +6,11 @@ title: Architecture
 
 ## Architecture
 
-Posts about **architectural judgement**, design, patterns, decisions and real-world experience.
+Posts about **architectural judgement**, design, patterns, decisions and experiences.
 
 <ul>
 {% assign posts_en = site.en_posts
- | where_exp: "post", "post.categories contains 'arquitectura'" 
+ | where_exp: "post", "post.categories contains 'architecture'"
  | reverse
 %}
 {% assign now_ts = site.time | date: "%s" %}

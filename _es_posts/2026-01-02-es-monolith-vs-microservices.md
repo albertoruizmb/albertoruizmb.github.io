@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Monolito, microservicios y la falsa dicotomía"
-date: 2026-01-16
+date: 2026-01-02
 slug: monolith-vs-microservices
 categories: [arquitectura]
 tags: [monolito, microservicios, arquitectura, decisiones]

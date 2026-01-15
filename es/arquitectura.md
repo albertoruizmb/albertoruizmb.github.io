@@ -6,8 +6,7 @@ title: Arquitectura
 
 ## Arquitectura
 
-Posts sobre **criterio arquitectónico**, diseño,
-patrones, decisiones y experiencia real.
+Posts sobre **criterio arquitectónico**, diseño, patrones, decisiones y experiencias.
 
 <ul>
 {% assign posts_es = site.es_posts
