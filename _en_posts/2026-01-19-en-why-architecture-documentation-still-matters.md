@@ -35,3 +35,4 @@ Architectural documentation is not a relic of the past. It is a tool that keeps 
 
 AI can help you build faster.  
 Architecture documentation helps you build with intent.
+ 

@@ -35,3 +35,4 @@ La documentación arquitectónica no es un artefacto del pasado. Es una herramie
 
 La IA puede ayudarte a construir más rápido.  
 La documentación arquitectónica te permite construir con sentido.
+ 
