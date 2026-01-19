@@ -23,8 +23,8 @@ Reflexiones técnicas: tendencias, errores comunes y criterio.
   {% assign show_post = true %}
 
   {% comment %}
-  When future:false (site.show_future is falsy), hide posts dated in the future.
-  When future:true, show them.
+  When show_future:false (site.show_future is falsy), hide posts dated in the future.
+  When show_future:true, show them.
   {% endcomment %}
   {% unless site.show_future %}
     {% if post_ts > now_ts %}

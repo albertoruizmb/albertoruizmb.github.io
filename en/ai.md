@@ -10,7 +10,7 @@ AI applied to products and architecture: RAG, agents, search, evaluation and rea
 
 <ul>
 {% assign posts_en = site.en_posts
- | where_exp: "post", "post.categories contains 'ia'"
+ | where_exp: "post", "post.categories contains 'ai'"
  | reverse
 %}
 {% assign now_ts = site.time | date: "%s" %}
@@ -23,8 +23,8 @@ AI applied to products and architecture: RAG, agents, search, evaluation and rea
   {% assign show_post = true %}
 
   {% comment %}
-  When future:false (site.show_future is falsy), hide posts dated in the future.
-  When future:true, show them.
+  When show_show_future:false (site.show_future is falsy), hide posts dated in the future.
+  When show_show_future:true, show them.
   {% endcomment %}
   {% unless site.show_future %}
     {% if post_ts > now_ts %}
