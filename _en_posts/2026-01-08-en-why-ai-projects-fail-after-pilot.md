@@ -3,7 +3,7 @@ layout: post
 title: "Why many AI projects fail after the pilot"
 date: 2026-01-08
 slug: why-ai-projects-fail-after-pilot
-categories: [ia]
+categories: [ai]
 tags: [ai, production, data, architecture, organisation]
 author: "Alberto Ruiz"
 excerpt: "Most organisations have already run some kind of AI pilot."

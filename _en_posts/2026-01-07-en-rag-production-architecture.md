@@ -3,7 +3,7 @@ layout: post
 title: "The real architecture of a production RAG system"
 date: 2026-01-07
 slug: rag-production-architecture
-categories: [ia]
+categories: [ai]
 tags: [rag, ai, architecture, llm, production]
 author: "Alberto Ruiz"
 excerpt: "Today it is trivial to build a RAG demo: a PDF, a vector store and a call to an LLM."
