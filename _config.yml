@@ -9,7 +9,8 @@ theme: jekyll-theme-minimal
 # Blog
 markdown: kramdown
 show_excerpts: true
-future: false  # Habilitar publicaciones futuras
+future: true  # Habilitar publicaciones futuras
+show_future: true  # Mostrar publicaciones futuras en las listas de entradas
 
 # ✅ Colecciones por idioma (GitHub Pages safe)
 collections:
