@@ -10,7 +10,7 @@ excerpt: "Cuando los agentes colaboran, la arquitectura deja de ser opcional."
 ---
 
 Durante mucho tiempo, hablar de IA en productos software era, en la práctica, hablar de *chatbots*. Un modelo, una conversación, algunas herramientas alrededor y un flujo más o menos lineal. Ese enfoque sigue siendo válido para muchos casos, pero empieza a quedarse corto en cuanto intentamos construir algo mínimamente ambicioso.
- 
+
 En cuanto aparece la necesidad de especializar comportamientos, separar responsabilidades o permitir que distintas capacidades cooperen entre sí, el concepto de “un agente” deja de ser suficiente. Sin darnos cuenta, cruzamos una frontera importante: ya no estamos diseñando un agente aislado, sino un sistema compuesto por múltiples agentes que interactúan entre sí. Y ahí es donde la arquitectura vuelve a ser determinante.
 
 Un agente individual suele funcionar razonablemente bien cuando el problema está bien acotado. La lógica se puede seguir, los errores son localizables y el comportamiento general resulta comprensible. El problema aparece cuando empezamos a añadir más inteligencia alrededor: otro agente que valida, otro que revisa, otro que decide si continuar o no. Ese crecimiento no es lineal. No es simplemente “más agentes”. Es un salto cualitativo.
