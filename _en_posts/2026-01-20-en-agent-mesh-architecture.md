@@ -10,7 +10,7 @@ excerpt: "When agents collaborate, architecture is no longer optional."
 ---
 
 For a long time, talking about AI in software products was, in practice, talking about chatbots. One model, one conversation, a few tools around it, and a more or less linear flow. That approach is still valid for many use cases, but it starts to fall short as soon as we try to build something even moderately ambitious.
- 
+
 As soon as there is a need to specialize behaviors, separate responsibilities, or allow different capabilities to cooperate, the notion of a “single agent” is no longer sufficient. Almost without noticing, we cross an important boundary: we are no longer designing an isolated agent, but a system composed of multiple agents interacting with each other. And that is where architecture becomes decisive again.
 
 A single agent usually works reasonably well when the problem is tightly scoped. The logic can be followed, errors are identifiable, and the overall behavior remains understandable. The problem arises when we start adding more intelligence around it: another agent to validate, another to review, another to decide whether to proceed or not. That growth is not linear. It is not simply “more agents”. It is a qualitative shift.
