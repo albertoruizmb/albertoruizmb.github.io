@@ -1,0 +1,58 @@
+---
+layout: post
+title: "From Copilots to Agents: An Architectural Reading of Microsoft AI Tour 2026"
+date: 2026-03-05
+slug: copilots-to-agents-ai-architecture
+categories: [ai, opinion]
+tags: [architecture, ai-architecture, ai-agents, ai-platforms]
+author: "Alberto Ruiz"
+excerpt: "Microsoft AI Tour 2026 hints at an interesting shift in the evolution of enterprise AI: from isolated copilots toward agent-based systems integrated into real business processes."
+---
+
+Microsoft AI Tour is a global event series where Microsoft presents its vision and progress in enterprise artificial intelligence. In the 2026 edition, beyond demonstrations and use cases, a few interesting signals emerge about how the way we build AI-based systems is evolving.
+
+Over the past two years, much of the conversation around AI has been dominated by models. Which model to use, how many parameters it has, which benchmarks it leads, or which provider offers it. The focus has clearly been on model capability.
+
+However, it is becoming increasingly evident that the main challenge is no longer just the model. The problem is starting to shift elsewhere: how to build complete systems that incorporate artificial intelligence into real business processes.
+
+And that shift has important architectural implications.
+
+During the first phase of generative AI adoption, many organizations experimented with relatively isolated assistants or copilots. Conversational interfaces that answered questions, generated content, or helped automate small tasks.
+
+These systems could provide value, but in many cases they operated at the margins of enterprise systems. They accessed documents or knowledge bases, but rarely participated directly in operational processes.
+
+Just a year ago, much of the conversation revolved around copilots. Today it is beginning to revolve around agents.
+
+At AI Tour 2026, a different architectural direction starts to become visible.
+
+There is increasing discussion around AI agents capable of executing tasks, using tools, consulting external systems, and coordinating complete workflows. Instead of simply answering questions, these agents can trigger actions: calling an API, updating a system, generating a document, or initiating a process.
+
+In many cases, these systems are designed as architectures where multiple specialized agents collaborate with each other, using tools and sharing context to solve tasks that no single component could complete on its own.
+
+Tools such as Copilot Studio or the Microsoft Foundry platform, which Microsoft is positioning as an environment for building, evaluating, and operating AI systems, clearly move in that direction: enabling the creation and management of agents connected to enterprise systems.
+
+The underlying idea is simple but significant. Artificial intelligence stops being only a conversational interface and begins to behave as an active component within the system.
+
+That shift introduces a new level of technical complexity.
+
+Designing agent-based applications involves solving problems that go beyond prompting or choosing a particular model. Questions arise around task orchestration, state management, observability of agent behavior, and control over the effects agents can produce in external systems.
+
+In other words, the problem once again becomes —to a large extent— an architectural one.
+
+Another interesting signal is the growing importance of AI platforms. Instead of treating each use case as an isolated experiment, the idea of building shared layers is starting to consolidate. Layers that manage aspects such as model access, information retrieval, evaluation of results, monitoring, and system governance.
+
+This is often what happens when a technology begins to mature. Early implementations are experimental and relatively independent from each other. Over time, organizations realize they need shared infrastructure in order to scale the use of that technology in a sustainable way.
+
+Artificial intelligence seems to be entering that phase.
+
+The nature of technical work is also changing. For a while, much of the effort was focused on learning how to interact with language models: designing effective prompts, integrating embeddings, or building retrieval systems.
+
+Those skills remain relevant, but they are starting to become only part of the problem.
+
+The real challenge becomes how to integrate agents, data, APIs, and enterprise systems within coherent and governable architectures. In other words, how to build AI systems that do not just generate interesting responses, but can operate reliably within real environments.
+
+From that perspective, perhaps one of the most interesting signals emerging from Microsoft AI Tour 2026 is that artificial intelligence is starting to move from the periphery of systems toward the core of architecture.
+
+When a technology reaches that point, new questions begin to emerge beyond the model or the individual use case. How these systems are governed, how they are securely integrated with business processes, how they are observed, and how their effects are controlled.
+
+In that context, architecture returns to a central role —not as the only concern, but as the framework that allows all these aspects to be integrated coherently into systems that can truly operate in the real world.
