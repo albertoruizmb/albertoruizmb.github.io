@@ -4,7 +4,7 @@ title: "Gobierno cloud para equipos pequeños (sin matar la agilidad)"
 date: 2026-01-05
 slug: cloud-governance-for-small-teams
 categories: [cloud]
-tags: [gobierno, azure, cloud, costes, arquitectura]
+tags: [gobierno, azure, cloud, costes, architecture]
 author: "Alberto Ruiz"
 excerpt: "Cuando se habla de gobierno cloud, muchas organizaciones piensan en burocracia."
 ---

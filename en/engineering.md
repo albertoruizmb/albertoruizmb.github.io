@@ -1,22 +1,21 @@
 ---
 layout: default
-title: Arquitectura
----
+title: Engineering
 ---
 
-## Arquitectura
+## Engineering
 
-Posts sobre **criterio arquitectónico**, diseño, patrones, decisiones y experiencias.
+Posts about **technical practice, processes and operational issues**.
 
 <ul>
-{% assign posts_es = site.es_posts
-  | where_exp: "post", "post.categories contains 'architecture'"
-  | reverse
+{% assign posts_en = site.en_posts
+   | where_exp: "post","post.categories contains 'engineering'"
+   | reverse
 %}
 {% assign now_ts = site.time | date: "%s" %}
 {% assign shown = 0 %}
 
-{% for post in posts_es %}
+{% for post in posts_en %}
   {% if shown >= 5 %}{% break %}{% endif %}
 
   {% assign post_ts = post.date | date: "%s" %}
@@ -41,4 +40,4 @@ Posts sobre **criterio arquitectónico**, diseño, patrones, decisiones y experi
 
 ---
 
-[Volver](/es)
+[Back](/en)

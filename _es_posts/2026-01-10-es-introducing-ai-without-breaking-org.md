@@ -4,7 +4,7 @@ title: "Introducir IA en una organización sin romperla"
 date: 2026-01-10
 slug: introducing-ai-without-breaking-org
 categories: [opinion]
-tags: [ia, organizacion, transformacion, liderazgo]
+tags: [ai, organizacion, transformacion, liderazgo]
 author: "Alberto Ruiz"
 excerpt: "La mayoría de organizaciones quiere “usar IA”. Pocas saben realmente qué significa eso."
 ---

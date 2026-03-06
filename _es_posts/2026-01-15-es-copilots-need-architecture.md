@@ -3,7 +3,7 @@ layout: post
 title: "Por qué los copilots no escalan sin arquitectura"
 date: 2026-01-15
 slug: copilots-need-architecture
-categories: [ia]
+categories: [ai]
 tags: [copilot, ia, arquitectura, productividad, organizacion]
 author: "Alberto Ruiz"
 excerpt: "Muchas organizaciones están desplegando copilots y asistentes de IA. Pocas están diseñando el sistema que los rodea."

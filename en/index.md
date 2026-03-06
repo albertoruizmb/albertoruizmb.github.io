@@ -11,6 +11,7 @@ title: Home
 - [Cloud](/en/cloud)
 - [AI](/en/ai)
 - [Opinion](/en/opinion)
+- [Engineering](/en/engineering)
 - [About](/en/about)
 
   or

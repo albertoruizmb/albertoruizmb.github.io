@@ -4,7 +4,7 @@ title: "Por qué una landing zone no es solo infraestructura"
 date: 2026-01-04
 slug: landing-zone-is-not-just-infrastructure
 categories: [cloud]
-tags: [landing-zone, azure, cloud, gobierno, arquitectura]
+tags: [landing-zone, azure, cloud, gobierno, architecture]
 author: "Alberto Ruiz"
 excerpt: "En muchos proyectos cloud, la landing zone se trata como un paso previo."
 ---
@@ -18,7 +18,7 @@ He visto *landing zones* técnicamente correctas que fracasaban como plataforma.
 La infraestructura aguanta.  
 La organización no.
 
-Una *landing zone* no es un conjunto de recursos. Es el **modelo operativo de la nube**. Define quién puede crear qué, cómo se controla el gasto, cómo se auditan los cambios, cómo se integran los equipos y cómo se responde a incidentes. Es el punto donde arquitectura, seguridad, finanzas y operación se cruzan.
+Una *landing zone* no es un conjunto de recursos. Es el **modelo operativo de la nube**. Define quién puede crear qué, cómo se controla el gasto, cómo se auditan los cambios, cómo se integran los equipos y cómo se responde a incidentes. Es el punto donde architecture, seguridad, finanzas y operación se cruzan.
 
 Si solo piensas en subredes y firewalls, estás construyendo un datacenter. No una plataforma.
 
@@ -26,4 +26,4 @@ Por eso una *landing zone* bien diseñada suele incluir desde el primer día ide
 
 No es un “proyecto de infraestructura”. Es la **fundación organizativa del cloud**. Cuando esto está claro, los equipos pueden desplegar rápido sin perder el control. Cuando no lo está, cada despliegue añade deuda operativa que alguien tendrá que pagar más adelante.
 
-Una *landing zone* no sirve para ejecutar máquinas. Sirve para **alinear una organización con una plataforma**. Quien la diseña solo como infraestructura acaba gestionando caos. Quien la diseña como arquitectura construye velocidad sostenible.
+Una *landing zone* no sirve para ejecutar máquinas. Sirve para **alinear una organización con una plataforma**. Quien la diseña solo como infraestructura acaba gestionando caos. Quien la diseña como architecture construye velocidad sostenible.

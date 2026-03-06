@@ -3,7 +3,7 @@ layout: post
 title: "Arquitectura en la era de la IA: lo que no cambia (y lo que sí)"
 date: 2026-01-16
 slug: architecture-in-the-age-of-ai
-categories: [ia]
+categories: [ai]
 tags: [arquitectura, ia, sistemas, ingenieria-software]
 author: "Alberto Ruiz"
 excerpt: "La inteligencia artificial introduce nuevos componentes y supuestos, pero no elimina la arquitectura. La hace más necesaria."

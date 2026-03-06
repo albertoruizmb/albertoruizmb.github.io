@@ -73,6 +73,14 @@ Global language switcher (GitHub Pages safe)
     {% assign es_url = "/es/opinion" %}
     {% assign en_url = "/en/opinion" %}
 
+  {% elsif url == "/es/engineering" or url == "/es/engineering/" %}
+    {% assign es_url = "/es/engineering" %}
+    {% assign en_url = "/en/engineering" %}
+
+  {% elsif url == "/en/engineering" or url == "/en/engineering/" %}
+    {% assign es_url = "/es/engineering" %}
+    {% assign en_url = "/en/engineering" %}
+
   {% elsif url == "/es/about" or url == "/es/about/" %}
     {% assign es_url = "/es/about" %}
     {% assign en_url = "/en/about" %}

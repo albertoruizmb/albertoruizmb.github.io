@@ -1,16 +1,15 @@
 ---
 layout: default
-title: Arquitectura
----
+title: Engineering
 ---
 
-## Arquitectura
+## Engineering
 
-Posts sobre **criterio arquitectónico**, diseño, patrones, decisiones y experiencias.
+Posts sobre **práctica técnica, procesos y operación**.
 
 <ul>
 {% assign posts_es = site.es_posts
-  | where_exp: "post", "post.categories contains 'architecture'"
+  | where_exp: "post", "post.categories contains 'engineering'"
   | reverse
 %}
 {% assign now_ts = site.time | date: "%s" %}

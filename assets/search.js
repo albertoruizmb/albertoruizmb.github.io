@@ -92,11 +92,22 @@
     return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
 
+  // etiquetas legibles por idioma para categorías canónicas.
+  const CAT_LABELS = {
+    blog:         {en: "Blog",        es: "Blog"},
+    architecture: {en: "Architecture", es: "Arquitectura"},
+    cloud:        {en: "Cloud",       es: "Cloud"},
+    ai:           {en: "AI",          es: "IA"},
+    opinion:      {en: "Opinion",     es: "Opinión"},
+    engineering:  {en: "Engineering", es: "Engineering"} // same label in Spanish
+  };
+
   function formatCategory(cat) {
     if (!cat) return isES ? "Sin categoría" : "Uncategorised";
     // si es array, usa la primera; si es string, úsala
-    const c = Array.isArray(cat) ? (cat[0] || "") : String(cat);
-    return c || (isES ? "Sin categoría" : "Uncategorised");
+    const key = Array.isArray(cat) ? (cat[0] || "") : String(cat);
+    const label = CAT_LABELS[key]?.[isES ? "es" : "en"];
+    return label || key || (isES ? "Sin categoría" : "Uncategorised");
   }
 
   function groupResults(list) {

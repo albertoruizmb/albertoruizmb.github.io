@@ -3,8 +3,8 @@ layout: post
 title: "De copilots a agentes: una lectura arquitectónica del Microsoft AI Tour 2026"
 date: 2026-03-05
 slug: copilots-to-agents-ai-architecture
-categories: [ia, opinion]
-tags: [arquitectura, arquitectura-de-ia, agentes-de-ia, plataformas-de-ia]
+categories: [ai, opinion]
+tags: [architecture, architecture-de-ai, agentes-de-ai, plataformas-de-ai]
 author: "Alberto Ruiz"
 excerpt: "El Microsoft AI Tour 2026 deja entrever un cambio interesante en la evolución de la inteligencia artificial empresarial: de copilots aislados hacia sistemas basados en agentes integrados en procesos reales."
 ---
@@ -23,11 +23,11 @@ Estos sistemas podían aportar valor, pero en muchos casos operaban en los márg
 
 Hace apenas un año gran parte de la conversación giraba alrededor de los copilots. Hoy empieza a girar alrededor de los agentes.
 
-En el AI Tour 2026 empieza a percibirse un movimiento hacia una arquitectura distinta.
+En el AI Tour 2026 empieza a percibirse un movimiento hacia una architecture distinta.
 
 Cada vez se habla más de agentes de inteligencia artificial capaces de ejecutar tareas, utilizar herramientas, consultar sistemas externos y coordinar flujos de trabajo completos. En lugar de limitarse a responder preguntas, estos agentes pueden desencadenar acciones: consultar una API, actualizar un sistema, generar un documento o iniciar un proceso.
 
-En muchos casos, estos sistemas se diseñan como arquitecturas donde varios agentes especializados colaboran entre sí, utilizando herramientas y compartiendo contexto para resolver tareas que ningún componente aislado podría completar por sí solo.
+En muchos casos, estos sistemas se diseñan como architectures donde varios agentes especializados colaboran entre sí, utilizando herramientas y compartiendo contexto para resolver tareas que ningún componente aislado podría completar por sí solo.
 
 Herramientas como Copilot Studio o la plataforma Microsoft Foundry, que Microsoft está posicionando como entorno para construir, evaluar y operar sistemas de inteligencia artificial, apuntan precisamente en esa dirección: facilitar la creación y gestión de agentes conectados con sistemas empresariales.
 
@@ -37,7 +37,7 @@ Ese cambio introduce un nuevo nivel de complejidad técnica.
 
 Diseñar aplicaciones basadas en agentes implica resolver problemas que van más allá del prompting o de la elección de un modelo concreto. Aparecen cuestiones relacionadas con la orquestación de tareas, la gestión del estado, la observabilidad del comportamiento de los agentes o el control de los efectos que pueden producir en sistemas externos.
 
-En otras palabras, el problema vuelve a ser —en gran medida— un problema de arquitectura.
+En otras palabras, el problema vuelve a ser —en gran medida— un problema de architecture.
 
 Otra señal interesante es la creciente importancia de las plataformas de IA. En lugar de tratar cada caso de uso como un experimento aislado, empieza a consolidarse la idea de construir capas comunes que gestionen aspectos como el acceso a modelos, la recuperación de información, la evaluación de resultados, la monitorización o el gobierno del sistema.
 
@@ -49,10 +49,10 @@ También cambia la naturaleza del trabajo técnico. Durante un tiempo, gran part
 
 Esas habilidades siguen siendo relevantes, pero empiezan a ser solo una parte del problema.
 
-El verdadero desafío pasa a ser cómo integrar agentes, datos, APIs y sistemas empresariales dentro de arquitecturas coherentes y gobernables. Es decir, cómo construir sistemas de IA que no solo generen respuestas interesantes, sino que puedan operar de forma fiable dentro de entornos reales.
+El verdadero desafío pasa a ser cómo integrar agentes, datos, APIs y sistemas empresariales dentro de architectures coherentes y gobernables. Es decir, cómo construir sistemas de IA que no solo generen respuestas interesantes, sino que puedan operar de forma fiable dentro de entornos reales.
 
-Desde ese punto de vista, quizá una de las señales más interesantes que deja el Microsoft AI Tour 2026 es que la inteligencia artificial empieza a desplazarse desde la periferia de los sistemas hacia el núcleo de la arquitectura.
+Desde ese punto de vista, quizá una de las señales más interesantes que deja el Microsoft AI Tour 2026 es que la inteligencia artificial empieza a desplazarse desde la periferia de los sistemas hacia el núcleo de la architecture.
 
 Cuando una tecnología llega a ese punto, empiezan a aparecer preguntas que van más allá del modelo o del caso de uso concreto. Cómo se gobiernan estos sistemas, cómo se integran de forma segura con procesos empresariales, cómo se observan y cómo se controlan sus efectos.
 
-En ese contexto, la arquitectura vuelve a ocupar un lugar central: no como la única preocupación, sino como el marco que permite integrar de forma coherente todos esos aspectos dentro de sistemas que realmente puedan operar en el mundo real.
+En ese contexto, la architecture vuelve a ocupar un lugar central: no como la única preocupación, sino como el marco que permite integrar de forma coherente todos esos aspectos dentro de sistemas que realmente puedan operar en el mundo real.

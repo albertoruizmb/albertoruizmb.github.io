@@ -10,7 +10,7 @@ IA aplicada a producto y arquitectura: RAG, agentes, búsqueda, evaluación y de
 
 <ul>
 {% assign posts_es = site.es_posts
-  | where_exp: "post", "post.categories contains 'ia'"
+  | where_exp: "post", "post.categories contains 'ai'"
   | reverse
 %}
 {% assign now_ts = site.time | date: "%s" %}

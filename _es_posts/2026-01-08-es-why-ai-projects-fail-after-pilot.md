@@ -3,8 +3,8 @@ layout: post
 title: "Por qué muchos proyectos de IA fallan después del piloto"
 date: 2026-01-08
 slug: why-ai-projects-fail-after-pilot
-categories: [ia]
-tags: [ia, produccion, datos, arquitectura, organizacion]
+categories: [ai]
+tags: [ai, produccion, datos, architecture, organizacion]
 author: "Alberto Ruiz"
 excerpt: "La mayoría de organizaciones ya ha hecho algún piloto de IA."
 ---

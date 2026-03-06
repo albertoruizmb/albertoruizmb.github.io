@@ -3,7 +3,7 @@ layout: post
 title: "Qué es realmente un DSA (y por qué muchas veces no se usa bien)"
 date: 2026-01-03
 slug: what-is-a-dsa
-categories: [arquitectura]
+categories: [architecture]
 tags: [dsa, documentacion, arquitectura, decisiones]
 author: "Alberto Ruiz"
 excerpt: "En muchos proyectos se habla de “hacer un DSA” como si fuera un trámite más."

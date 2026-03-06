@@ -3,7 +3,7 @@ layout: post
 title: "Arquitectura de malla de agentes: cuando la IA deja de ser un chatbot"
 date: 2026-01-20
 slug: agent-mesh-architecture
-categories: [arquitectura, ia]
+categories: [architecture, ai]
 tags: [ai-agents, arquitectura-de-software, sistemas-distribuidos, criterio-arquitectonico]
 author: "Alberto Ruiz"
 excerpt: "Cuando los agentes colaboran, la arquitectura deja de ser opcional."

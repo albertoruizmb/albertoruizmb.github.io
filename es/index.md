@@ -11,6 +11,7 @@ title: Inicio
 - [Cloud](/es/cloud)
 - [IA](/es/ia)
 - [Opinión](/es/opinion)
+- [Engineering](/es/engineering)
 - [Sobre mí](/es/about)
   
   o
