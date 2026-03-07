@@ -7,6 +7,7 @@ categories: [cloud, architecture]
 tags: [cloud-architecture, architecture-patterns, distributed-systems, system-design]
 author: "Alberto Ruiz"
 excerpt: "Los patrones de arquitectura cloud recogen soluciones probadas para problemas recurrentes en el diseño de sistemas y ayudan a construir aplicaciones escalables, resilientes y mantenibles."
+published: false
 ---
 
 Las plataformas cloud modernas ofrecen una enorme cantidad de servicios,
