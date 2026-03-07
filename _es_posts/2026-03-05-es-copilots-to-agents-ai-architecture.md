@@ -4,7 +4,7 @@ title: "De copilots a agentes: una lectura arquitectónica del Microsoft AI Tour
 date: 2026-03-05
 slug: copilots-to-agents-ai-architecture
 categories: [ai, opinion]
-tags: [architecture, architecture-de-ai, agentes-de-ai, plataformas-de-ai]
+tags: [arquitectura, arquitectura-de-ia, agentes-de-ia, plataformas-de-ia]
 author: "Alberto Ruiz"
 excerpt: "El Microsoft AI Tour 2026 deja entrever un cambio interesante en la evolución de la inteligencia artificial empresarial: de copilots aislados hacia sistemas basados en agentes integrados en procesos reales."
 ---
@@ -23,11 +23,11 @@ Estos sistemas podían aportar valor, pero en muchos casos operaban en los márg
 
 Hace apenas un año gran parte de la conversación giraba alrededor de los copilots. Hoy empieza a girar alrededor de los agentes.
 
-En el AI Tour 2026 empieza a percibirse un movimiento hacia una architecture distinta.
+En el AI Tour 2026 empieza a percibirse un movimiento hacia una arquitectura distinta.
 
 Cada vez se habla más de agentes de inteligencia artificial capaces de ejecutar tareas, utilizar herramientas, consultar sistemas externos y coordinar flujos de trabajo completos. En lugar de limitarse a responder preguntas, estos agentes pueden desencadenar acciones: consultar una API, actualizar un sistema, generar un documento o iniciar un proceso.
 
-En muchos casos, estos sistemas se diseñan como architectures donde varios agentes especializados colaboran entre sí, utilizando herramientas y compartiendo contexto para resolver tareas que ningún componente aislado podría completar por sí solo.
+En muchos casos, estos sistemas se diseñan como arquitecturas donde varios agentes especializados colaboran entre sí, utilizando herramientas y compartiendo contexto para resolver tareas que ningún componente aislado podría completar por sí solo.
 
 Herramientas como Copilot Studio o la plataforma Microsoft Foundry, que Microsoft está posicionando como entorno para construir, evaluar y operar sistemas de inteligencia artificial, apuntan precisamente en esa dirección: facilitar la creación y gestión de agentes conectados con sistemas empresariales.
 

@@ -19,6 +19,14 @@ layout: nil
   {% assign is_en = true %} 
 {% endif %}
 
+{% if is_es %}
+<link rel="alternate" hreflang="es" href="{{ page.url | absolute_url }}" />
+<link rel="alternate" hreflang="en" href="{{ page.url | replace: '/es/', '/en/' | absolute_url }}" />
+{% elsif is_en %}
+<link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}" />
+<link rel="alternate" hreflang="es" href="{{ page.url | replace: '/en/', '/es/' | absolute_url }}" />
+{% endif %}
+
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   mermaid.initialize({ startOnLoad: true });

@@ -7,9 +7,9 @@ title: Inicio
 ## Explora
 
 - [Blog](/es/blog)
-- [Arquitectura](/es/arquitectura)
+- [Arquitectura](/es/architecture)
 - [Cloud](/es/cloud)
-- [IA](/es/ia)
+- [IA](/es/ai)
 - [Opinión](/es/opinion)
 - [Engineering](/es/engineering)
 - [Sobre mí](/es/about)

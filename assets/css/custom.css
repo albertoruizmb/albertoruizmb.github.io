@@ -2,6 +2,13 @@
    Custom UI tweaks (GitHub Pages safe)
    ------------------------------------------------------------ */
 
+.post-categories {
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
 /* Theme toggle button (fixed, top-right) */
 #theme-toggle {
   position: fixed;

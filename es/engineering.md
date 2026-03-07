@@ -5,7 +5,7 @@ title: Engineering
 
 ## Engineering
 
-Posts sobre **práctica técnica, procesos y operación**.
+Posts sobre **ingeniería práctica**: implementación, tooling, DevOps, cloud hands-on y operación de sistemas.
 
 <ul>
 {% assign posts_es = site.es_posts

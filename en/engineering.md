@@ -5,7 +5,7 @@ title: Engineering
 
 ## Engineering
 
-Posts about **technical practice, processes and operational issues**.
+Posts about **hands-on engineering**: implementation, tooling, DevOps, cloud infrastructure, and system operations.
 
 <ul>
 {% assign posts_en = site.en_posts
