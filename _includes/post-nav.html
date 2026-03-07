@@ -41,11 +41,17 @@ Post navigation (minimal + clean)
 {% endif %}
 
 {% comment %}
-Compute older/newer inside the same collection only, ordered by date desc.
+Compute older/newer inside the same collection and same primary category only,
+ordered by date desc.
 - newer_post = more recent than current
 - older_post = older than current
 {% endcomment %}
-{% assign docs = site[page.collection] | sort: "date" | reverse %}
+{% assign primary_cat = page.categories | first %}
+{% assign docs = site[page.collection]
+  | where_exp: "doc", "doc.categories contains primary_cat"
+  | sort: "date"
+  | reverse %}
+
 {% assign now_ts = site.time | date: "%s" %}
 {% assign newer_post = nil %}
 {% assign older_post = nil %}
