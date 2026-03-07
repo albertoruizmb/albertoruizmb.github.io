@@ -2,6 +2,7 @@
 Post navigation (minimal + clean)
 - Prefers language flags computed in default.html: is_es / is_en
 - Fallbacks to URL prefix if needed
+- Uses _data/category_labels.yml for translated category labels
 {% endcomment %}
 
 {%- assign lang_is_es = is_es -%}
@@ -14,12 +15,14 @@ Post navigation (minimal + clean)
 {%- endif -%}
 
 {% if lang_is_es %}
+  {% assign lang = "es" %}
   {% assign lang_prefix = "/es" %}
   {% assign label_prev = "← Más antiguo" %}
   {% assign label_next = "Más reciente →" %}
   {% assign label_back_blog = "Volver al blog" %}
   {% assign label_back_cat = "Volver a" %}
 {% else %}
+  {% assign lang = "en" %}
   {% assign lang_prefix = "/en" %}
   {% assign label_prev = "← Older" %}
   {% assign label_next = "Newer →" %}
@@ -28,71 +31,60 @@ Post navigation (minimal + clean)
 {% endif %}
 
 {% assign cat = page.categories | first %}
-
 {% assign cat_path = lang_prefix | append: "/blog" %}
-{% assign cat_label = "Blog" %}
+{% assign cat_label = site.data.category_labels.blog[lang] | default: "Blog" %}
 
-{% if cat == "architecture" %}
-  {% if lang_is_es %}
-    {% assign cat_path = "/es/architecture" %}
-    {% assign cat_label = "Arquitectura" %}
-  {% else %}
-    {% assign cat_path = "/en/architecture" %}
-    {% assign cat_label = "Architecture" %}
-  {% endif %}
-{% elsif cat == "cloud" %}
-  {% if lang_is_es %}
-    {% assign cat_path = "/es/cloud" %}
-  {% else %}
-    {% assign cat_path = "/en/cloud" %}
-  {% endif %}
-  {% assign cat_label = "Cloud" %}
-{% elsif cat == "ai" %}
-  {% if lang_is_es %}
-    {% assign cat_path = "/es/ai" %}
-    {% assign cat_label = "IA" %}
-  {% else %}
-    {% assign cat_path = "/en/ai" %}
-    {% assign cat_label = "AI" %}
-  {% endif %}
-{% elsif cat == "opinion" %}
-  {% if lang_is_es %}
-    {% assign cat_path = "/es/opinion" %}
-    {% assign cat_label = "Opinión" %}
-  {% else %}
-    {% assign cat_path = "/en/opinion" %}
-    {% assign cat_label = "Opinion" %}
-  {% endif %}
-{% elsif cat == "engineering" %}
-  {% assign cat_label = "Engineering" %}
-  {% if lang_is_es %}
-    {% assign cat_path = "/es/engineering" %}
-  {% else %}
-    {% assign cat_path = "/en/engineering" %}
-  {% endif %}
+{% if cat %}
+  {% assign cat_path = lang_prefix | append: "/" | append: cat %}
+  {% assign cat_label = site.data.category_labels[cat][lang] | default: cat %}
 {% endif %}
+
+{% assign docs = site[page.collection] | sort: "date" | reverse %}
+{% assign now_ts = site.time | date: "%s" %}
+{% assign newer_post = nil %}
+{% assign older_post = nil %}
+{% assign found_current = false %}
+
+{% for doc in docs %}
+  {% assign doc_ts = doc.date | date: "%s" %}
+  {% assign include_doc = true %}
+
+  {% unless site.show_future %}
+    {% if doc_ts > now_ts %}
+      {% assign include_doc = false %}
+    {% endif %}
+  {% endunless %}
+
+  {% if include_doc %}
+    {% if doc.url == page.url %}
+      {% assign found_current = true %}
+    {% elsif found_current %}
+      {% assign older_post = doc %}
+      {% break %}
+    {% else %}
+      {% assign newer_post = doc %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
 
 <hr />
 
 <nav style="margin-top:1.25rem;">
-  <!-- Row 1: prev / next -->
   <div style="display:flex; justify-content:space-between; gap:1.25rem; flex-wrap:wrap;">
     <div style="flex:1; min-width:260px;">
-      {% if page.previous %}
+      {% if older_post %}
         <div style="font-size:.9rem; opacity:.75; margin-bottom:.25rem;">{{ label_prev }}</div>
-        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+        <a href="{{ older_post.url }}">{{ older_post.title }}</a>
       {% endif %}
-    </div>
 
     <div style="flex:1; min-width:260px; text-align:right;">
-      {% if page.next %}
+      {% if newer_post %}
         <div style="font-size:.9rem; opacity:.75; margin-bottom:.25rem;">{{ label_next }}</div>
-        <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+        <a href="{{ newer_post.url }}">{{ newer_post.title }}</a>
       {% endif %}
     </div>
   </div>
 
-  <!-- Row 2: centered back links -->
   <div style="margin-top:1rem; text-align:center;">
     <a href="{{ cat_path }}">{{ label_back_cat }} {{ cat_label }}</a>
     <span style="opacity:.5; padding:0 .5rem;">·</span>
