@@ -3,6 +3,7 @@ Post navigation (minimal + clean)
 - Prefers language flags computed in default.html: is_es / is_en
 - Fallbacks to URL prefix if needed
 - Uses _data/category_labels.yml for translated category labels
+- Computes older/newer within the same collection only
 {% endcomment %}
 
 {%- assign lang_is_es = is_es -%}
@@ -39,6 +40,11 @@ Post navigation (minimal + clean)
   {% assign cat_label = site.data.category_labels[cat][lang] | default: cat %}
 {% endif %}
 
+{% comment %}
+Compute older/newer inside the same collection only, ordered by date desc.
+- newer_post = more recent than current
+- older_post = older than current
+{% endcomment %}
 {% assign docs = site[page.collection] | sort: "date" | reverse %}
 {% assign now_ts = site.time | date: "%s" %}
 {% assign newer_post = nil %}
@@ -69,15 +75,16 @@ Post navigation (minimal + clean)
 
 <hr />
 
-<nav style="margin-top:1.25rem;">
-  <div style="display:flex; justify-content:space-between; gap:1.25rem; flex-wrap:wrap;">
-    <div style="flex:1; min-width:260px;">
+<nav style="margin-top:1.25rem; width:100%;">
+  <div style="display:flex; justify-content:space-between; gap:1.25rem; flex-wrap:wrap; width:100%;">
+    <div style="flex:1 1 260px; min-width:260px;">
       {% if older_post %}
         <div style="font-size:.9rem; opacity:.75; margin-bottom:.25rem;">{{ label_prev }}</div>
         <a href="{{ older_post.url }}">{{ older_post.title }}</a>
       {% endif %}
+    </div>
 
-    <div style="flex:1; min-width:260px; text-align:right;">
+    <div style="flex:1 1 260px; min-width:260px; text-align:right;">
       {% if newer_post %}
         <div style="font-size:.9rem; opacity:.75; margin-bottom:.25rem;">{{ label_next }}</div>
         <a href="{{ newer_post.url }}">{{ newer_post.title }}</a>
@@ -85,7 +92,7 @@ Post navigation (minimal + clean)
     </div>
   </div>
 
-  <div style="margin-top:1rem; text-align:center;">
+  <div style="margin-top:1rem; text-align:center; width:100%; clear:both;">
     <a href="{{ cat_path }}">{{ label_back_cat }} {{ cat_label }}</a>
     <span style="opacity:.5; padding:0 .5rem;">·</span>
     <a href="{{ lang_prefix }}/blog">{{ label_back_blog }}</a>
