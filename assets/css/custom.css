@@ -2,11 +2,47 @@
    Custom UI tweaks (GitHub Pages safe)
    ------------------------------------------------------------ */
 
+/* Post categories under title */
 .post-categories {
-  font-size: 0.9em;
-  margin-top: -10px;
-  margin-bottom: 20px;
+  margin: 0.35rem 0 1rem 0;
+  font-size: 0.9rem;
   opacity: 0.8;
+}
+
+.post-categories a {
+  text-decoration: none;
+}
+
+.post-categories a:hover {
+  text-decoration: underline;
+}
+
+/* Related posts block */
+.related-posts {
+  margin-top: 2rem;
+  padding-top: 0.25rem;
+}
+
+.related-posts h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.05rem;
+}
+
+.related-posts ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.related-posts li {
+  margin: 0.35rem 0;
+}
+
+.related-posts a {
+  text-decoration: none;
+}
+
+.related-posts a:hover {
+  text-decoration: underline;
 }
 
 /* Theme toggle button (fixed, top-right) */

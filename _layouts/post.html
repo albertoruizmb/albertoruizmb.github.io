@@ -17,6 +17,46 @@ layout: default
   {% endif %}
 
   {{ content }}
+
+  {% if page.categories and page.categories.size > 0 %}
+    {% assign primary_cat = page.categories[0] %}
+    {% assign primary_cat_label = site.data.category_labels[primary_cat][lang] | default: primary_cat %}
+
+    {% assign related_candidates = site[page.collection] | sort: "date" | reverse %}
+    {% assign related_count = 0 %}
+
+    {% capture related_posts_markup %}
+      {% for related_post in related_candidates %}
+        {% if related_post.url != page.url and related_post.categories contains primary_cat %}
+          {% assign related_count = related_count | plus: 1 %}
+          <li>
+            <a href="{{ related_post.url }}">{{ related_post.title }}</a>
+          </li>
+          {% if related_count >= 3 %}
+            {% break %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+
+    {% if related_count > 0 %}
+      <hr>
+
+      <section class="related-posts">
+        <h3>
+          {% if lang == "es" %}
+            Más sobre {{ primary_cat_label }}
+          {% else %}
+            More in {{ primary_cat_label }}
+          {% endif %}
+        </h3>
+
+        <ul>
+          {{ related_posts_markup }}
+        </ul>
+      </section>
+    {% endif %}  
+  {% endif %}
 </article>
 
 {% include post-nav.html %}
