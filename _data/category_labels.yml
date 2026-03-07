@@ -1,0 +1,23 @@
+blog:
+  en: "Blog"
+  es: "Blog"
+
+architecture:
+  en: "Architecture"
+  es: "Arquitectura"
+
+cloud:
+  en: "Cloud"
+  es: "Cloud"
+
+ai:
+  en: "AI"
+  es: "IA"
+
+opinion:
+  en: "Opinion"
+  es: "Opinión"
+
+engineering:
+  en: "Engineering"
+  es: "Engineering"

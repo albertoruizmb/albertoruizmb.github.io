@@ -2,7 +2,9 @@
 Global language switcher (GitHub Pages safe)
 - Uses url/is_es/is_en computed in default.html
 - Posts: match by slug across collections
-- Pages: map known routes
+- Pages: map known routes dynamically
+  - Category pages are detected from _data/category_labels.yml
+  - Static pages handled explicitly: about, search
 {% endcomment %}
 
 {% assign es_url = "/es" %}
@@ -11,110 +13,61 @@ Global language switcher (GitHub Pages safe)
 {% if page.collection == "es_posts" %}
   {% assign es_url = page.url %}
   {% assign match = site.en_posts | where: "slug", page.slug | first %}
-  {% if match %}{% assign en_url = match.url %}{% endif %}
+  {% if match %}
+    {% assign en_url = match.url %}
+  {% endif %}
 
 {% elsif page.collection == "en_posts" %}
   {% assign en_url = page.url %}
   {% assign match = site.es_posts | where: "slug", page.slug | first %}
-  {% if match %}{% assign es_url = match.url %}{% endif %}
+  {% if match %}
+    {% assign es_url = match.url %}
+  {% endif %}
 
 {% else %}
-  {% comment %} PAGES: map between ES and EN equivalents {% endcomment %}
+  {% assign normalized_url = url | replace: ".html", "" %}
+  {% assign parts = normalized_url | split: "/" %}
+  {% assign page_lang = parts[1] %}
+  {% assign page_slug = parts[2] %}
 
-  {% if url == "/" %}
+  {% if normalized_url == "/" or normalized_url == "/es" or normalized_url == "/es/" or normalized_url == "/en" or normalized_url == "/en/" %}
     {% assign es_url = "/es" %}
     {% assign en_url = "/en" %}
-
-  {% elsif url == "/es" or url == "/es/" %}
-    {% assign es_url = "/es" %}
-    {% assign en_url = "/en" %}
-
-  {% elsif url == "/en" or url == "/en/" %}
-    {% assign es_url = "/es" %}
-    {% assign en_url = "/en" %}
-
-  {% elsif url == "/es/blog" or url == "/es/blog/" %}
-    {% assign es_url = "/es/blog" %}
-    {% assign en_url = "/en/blog" %}
-
-  {% elsif url == "/en/blog" or url == "/en/blog/" %}
-    {% assign es_url = "/es/blog" %}
-    {% assign en_url = "/en/blog" %}
-
-  {% elsif url == "/es/architecture" or url == "/es/architecture/" %}
-    {% assign es_url = "/es/architecture" %}
-    {% assign en_url = "/en/architecture" %}
-
-  {% elsif url == "/en/architecture" or url == "/en/architecture/" %}
-    {% assign es_url = "/es/architecture" %}
-    {% assign en_url = "/en/architecture" %}
-
-  {% elsif url == "/es/cloud" or url == "/es/cloud/" %}
-    {% assign es_url = "/es/cloud" %}
-    {% assign en_url = "/en/cloud" %}
-
-  {% elsif url == "/en/cloud" or url == "/en/cloud/" %}
-    {% assign es_url = "/es/cloud" %}
-    {% assign en_url = "/en/cloud" %}
-
-  {% elsif url == "/es/ai" or url == "/es/ai/" %}
-    {% assign es_url = "/es/ai" %}
-    {% assign en_url = "/en/ai" %}
-
-  {% elsif url == "/en/ai" or url == "/en/ai/" %}
-    {% assign es_url = "/es/ai" %}
-    {% assign en_url = "/en/ai" %}
-
-  {% elsif url == "/es/opinion" or url == "/es/opinion/" %}
-    {% assign es_url = "/es/opinion" %}
-    {% assign en_url = "/en/opinion" %}
-
-  {% elsif url == "/en/opinion" or url == "/en/opinion/" %}
-    {% assign es_url = "/es/opinion" %}
-    {% assign en_url = "/en/opinion" %}
-
-  {% elsif url == "/es/engineering" or url == "/es/engineering/" %}
-    {% assign es_url = "/es/engineering" %}
-    {% assign en_url = "/en/engineering" %}
-
-  {% elsif url == "/en/engineering" or url == "/en/engineering/" %}
-    {% assign es_url = "/es/engineering" %}
-    {% assign en_url = "/en/engineering" %}
-
-  {% elsif url == "/es/about" or url == "/es/about/" %}
-    {% assign es_url = "/es/about" %}
-    {% assign en_url = "/en/about" %}
-
-  {% elsif url == "/en/about" or url == "/en/about/" %}
-    {% assign es_url = "/es/about" %}
-    {% assign en_url = "/en/about" %}
-
-  {% elsif url == "/es/search" or url == "/es/search/" %}
-    {% assign es_url = "/es/search" %}
-    {% assign en_url = "/en/search" %}
-
-  {% elsif url == "/en/search" or url == "/en/search/" %}
-    {% assign es_url = "/es/search" %}
-    {% assign en_url = "/en/search" %}
 
   {% else %}
-    {% comment %} Generic fallback: swap prefix if present {% endcomment %}
-    {% if is_es %}
-      {% assign es_url = url %}
-      {% assign en_url = url | replace_first: "/es", "/en" %}
-    {% elsif is_en %}
-      {% assign en_url = url %}
-      {% assign es_url = url | replace_first: "/en", "/es" %}
+    {% assign is_known_page = false %}
+
+    {% comment %} Category-like pages from _data/category_labels.yml {% endcomment %}
+    {% for item in site.data.category_labels %}
+      {% assign key = item[0] %}
+      {% if page_slug == key %}
+        {% assign is_known_page = true %}
+      {% endif %}
+    {% endfor %}
+
+    {% comment %} Additional static pages not stored in category_labels.yml {% endcomment %}
+    {% if page_slug == "about" or page_slug == "search" %}
+      {% assign is_known_page = true %}
+    {% endif %}
+
+    {% if is_known_page and (page_lang == "es" or page_lang == "en") %}
+      {% assign es_url = "/es/" | append: page_slug %}
+      {% assign en_url = "/en/" | append: page_slug %}
     {% else %}
-      {% assign es_url = "/es" %}
-      {% assign en_url = "/en" %}
+      {% comment %} Generic fallback: swap prefix if present {% endcomment %}
+      {% if is_es %}
+        {% assign es_url = normalized_url %}
+        {% assign en_url = normalized_url | replace_first: "/es", "/en" %}
+      {% elsif is_en %}
+        {% assign en_url = normalized_url %}
+        {% assign es_url = normalized_url | replace_first: "/en", "/es" %}
+      {% else %}
+        {% assign es_url = "/es" %}
+        {% assign en_url = "/en" %}
+      {% endif %}
     {% endif %}
   {% endif %}
 {% endif %}
-
-{% comment %} Post fallback if translation missing {% endcomment %}
-{% if page.collection == "es_posts" and en_url == nil %}{% assign en_url = "/en" %}{% endif %}
-{% if page.collection == "en_posts" and es_url == nil %}{% assign es_url = "/es" %}{% endif %}
 
 <p style="margin: 0.75rem 0 1rem 0;">
   <strong>
