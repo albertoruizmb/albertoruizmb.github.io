@@ -19,8 +19,6 @@
 
 /* Related posts block */
 .related-posts {
-  clear: both;
-  display: flow-root;
   margin-top: 2rem;
   padding-top: 0.25rem;
 }

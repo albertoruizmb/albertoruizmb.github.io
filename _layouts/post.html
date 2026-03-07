@@ -42,7 +42,7 @@ layout: default
     {% if related_count > 0 %}
       <hr>
 
-      <section class="related-posts">
+      <div class="related-posts">
         <h3>
           {% if lang == "es" %}
             Más sobre {{ primary_cat_label }}
@@ -54,7 +54,7 @@ layout: default
         <ul>
           {{ related_posts_markup }}
         </ul>
-      </section>
+      </div>
     {% endif %}  
   {% endif %}
 </article>
