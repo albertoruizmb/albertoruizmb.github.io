@@ -2,6 +2,18 @@
    Custom UI tweaks (GitHub Pages safe)
    ------------------------------------------------------------ */
 
+.post-header-image {
+  margin: 1.5rem 0;
+}
+
+.post-header-image img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
 /* Post categories under title */
 .post-categories {
   margin: 0.35rem 0 1rem 0;
