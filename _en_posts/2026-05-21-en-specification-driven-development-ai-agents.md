@@ -3,6 +3,8 @@ layout: post
 title: "Specification-Driven Development: bringing specifications back in the age of AI agents"
 date: 2026-05-21
 slug: specification-driven-development-ai-agents
+image: /assets/images/posts/specification-driven-development-ai-agents/header.webp
+image_alt: "Illustration of specification-driven development: a specialist oversees AI agents working on architecture, code, validation, and cloud deployment from a central specification."
 categories: [ai, architecture]
 tags: [sdd, spec-driven-development, ai, agents, software-engineering, architecture, openspec, spec-kit]
 author: "Alberto Ruiz"
