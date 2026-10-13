@@ -6,6 +6,7 @@ slug: copilots-to-agents-ai-architecture
 categories: [ai, opinion]
 tags: [arquitectura, arquitectura-de-ia, agentes-de-ia, plataformas-de-ia]
 author: "Alberto Ruiz"
+published: true
 excerpt: "El Microsoft AI Tour 2026 deja entrever un cambio interesante en la evolución de la inteligencia artificial empresarial: de copilots aislados hacia sistemas basados en agentes integrados en procesos reales."
 ---
 

@@ -6,6 +6,7 @@ slug: most-important-technical-decisions-are-not-in-code
 categories: [architecture]
 tags: [architecture-de-software, decisiones-tecnicas, criterio-arquitectonico]
 author: "Alberto Ruiz"
+published: true
 excerpt: "El código materializa decisiones, pero rara vez es el lugar donde se toman las más importantes."
 ---
 

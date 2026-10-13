@@ -6,6 +6,7 @@ slug: specification-driven-development-ai-agents
 categories: [ai, architecture, engineering]
 tags: [sdd, spec-driven-development, ai, agents, software-engineering, architecture, openspec, spec-kit]
 author: "Alberto Ruiz"
+published: true
 excerpt: "Specification-Driven Development está devolviendo protagonismo a las especificaciones en la ingeniería de software moderna, especialmente en escenarios de desarrollo asistido por agentes de IA."
 ---
 

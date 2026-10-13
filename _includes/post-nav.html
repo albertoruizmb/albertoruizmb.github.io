@@ -48,26 +48,16 @@ ordered by date desc.
 {% endcomment %}
 {% assign primary_cat = page.categories | first %}
 {% assign docs = site[page.collection]
-  | where_exp: "doc", "doc.categories contains primary_cat"
   | sort: "date"
   | reverse %}
 
-{% assign now_ts = site.time | date: "%s" %}
 {% assign newer_post = nil %}
 {% assign older_post = nil %}
 {% assign found_current = false %}
 
 {% for doc in docs %}
-  {% assign doc_ts = doc.date | date: "%s" %}
-  {% assign include_doc = true %}
-
-  {% unless site.show_future %}
-    {% if doc_ts > now_ts %}
-      {% assign include_doc = false %}
-    {% endif %}
-  {% endunless %}
-
-  {% if include_doc %}
+  {% assign doc_primary_cat = doc.categories | first %}
+  {% if doc_primary_cat == primary_cat %}
     {% if doc.url == page.url %}
       {% assign found_current = true %}
     {% elsif found_current %}

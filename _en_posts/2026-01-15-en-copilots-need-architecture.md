@@ -6,6 +6,7 @@ slug: copilots-need-architecture
 categories: [ai]
 tags: [copilot, ai, architecture, productivity, organization]
 author: "Alberto Ruiz"
+published: true
 excerpt: "Many organisations are deploying copilots and AI assistants. Few are designing the system around them."
 ---
 

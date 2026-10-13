@@ -6,6 +6,7 @@ slug: what-is-a-dsa
 categories: [architecture]
 tags: [dsa, documentation, architecture, decisions]
 author: "Alberto Ruiz"
+published: true
 excerpt: "In many projects people talk about “doing a DSA” as if it were just another formality."
 ---
 

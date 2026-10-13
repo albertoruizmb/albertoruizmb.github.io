@@ -8,6 +8,7 @@ image_alt: "Spec Kit and Specification-Driven Development"
 categories: [ai, architecture, engineering]
 tags: [sdd, spec-driven-development, ai, agents, software-engineering, architecture, spec-kit, github-copilot, azure-devops, microsoft]
 author: "Alberto Ruiz"
+published: true
 excerpt: "Spec Kit helps bring Specification-Driven Development into real projects by using specifications, technical plans and tasks to guide the work of AI agents."
 ---
 

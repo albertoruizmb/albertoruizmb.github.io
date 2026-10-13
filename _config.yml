@@ -9,8 +9,7 @@ theme: jekyll-theme-minimal
 # Blog
 markdown: kramdown
 show_excerpts: true
-future: true  # Habilitar publicaciones futuras
-show_future: false  # Mostrar publicaciones futuras en las listas de entradas
+future: true
 
 # Canonical categories for all posts (do not translate in front matter):
 # blog

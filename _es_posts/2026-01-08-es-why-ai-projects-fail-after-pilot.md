@@ -6,6 +6,7 @@ slug: why-ai-projects-fail-after-pilot
 categories: [ai]
 tags: [ai, produccion, datos, architecture, organizacion]
 author: "Alberto Ruiz"
+published: true
 excerpt: "La mayoría de organizaciones ya ha hecho algún piloto de IA."
 ---
 

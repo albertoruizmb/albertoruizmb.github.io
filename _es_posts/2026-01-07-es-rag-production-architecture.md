@@ -6,6 +6,7 @@ slug: rag-production-architecture
 categories: [ai]
 tags: [rag, ia, arquitectura, llm, produccion]
 author: "Alberto Ruiz"
+published: true
 excerpt: "Hoy es trivial construir una demo de RAG: un PDF, un vector store y una llamada a un LLM."
 ---
 
