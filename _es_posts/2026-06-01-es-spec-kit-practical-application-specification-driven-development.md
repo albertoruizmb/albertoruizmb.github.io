@@ -3,8 +3,8 @@ layout: post
 title: "Spec Kit: una forma práctica de aplicar Specification-Driven Development"
 date: 2026-06-01
 slug: spec-kit-practical-application-specification-driven-development
-image: /assets/images/posts/spec-kit-practical-application-specification-driven-development/header.png
-image_alt: "Spec Kit and Specification-Driven Development"
+image: /assets/images/posts/spec-kit-practical-application-specification-driven-development/header.webp
+image_alt: "Ilustración de Spec Kit: una persona supervisa agentes de IA que convierten especificaciones, planes y tareas en código y servicios en la nube."
 categories: [ai, architecture]
 tags: [sdd, spec-driven-development, ai, agents, software-engineering, architecture, spec-kit, github-copilot, azure-devops, microsoft]
 author: "Alberto Ruiz"

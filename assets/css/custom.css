@@ -8,8 +8,7 @@
 
 .post-header-image img {
   width: 100%;
-  max-height: 450px;
-  object-fit: cover;
+  height: auto;
   border-radius: 12px;
   display: block;
 }
