@@ -6,6 +6,7 @@ slug: introducing-ai-without-breaking-org
 categories: [opinion]
 tags: [ai, organisation, transformation, leadership]
 author: "Alberto Ruiz"
+published: true
 excerpt: "Most organisations want to “use AI”. Few really understand what that means."
 ---
 

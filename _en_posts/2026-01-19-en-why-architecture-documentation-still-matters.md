@@ -6,6 +6,7 @@ slug: why-architecture-documentation-still-matters
 categories: [ai]
 tags: [architecture, documentation, ai, systems, software-engineering]
 author: "Alberto Ruiz"
+published: true
 excerpt: "AI accelerates development, but it also accelerates the loss of context. Without architectural documentation, systems become fragile."
 ---
 
@@ -35,4 +36,4 @@ Architectural documentation is not a relic of the past. It is a tool that keeps 
 
 AI can help you build faster.  
 Architecture documentation helps you build with intent.
- 
+

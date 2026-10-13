@@ -6,6 +6,7 @@ slug: monolith-vs-microservices
 categories: [architecture]
 tags: [monolith, microservices, architecture, decisions]
 author: "Alberto Ruiz"
+published: true
 excerpt: "In almost every architecture conversation the same question comes up: “Monolith or microservices?”"
 ---
 

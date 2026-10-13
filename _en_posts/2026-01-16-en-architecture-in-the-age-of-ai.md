@@ -6,6 +6,7 @@ slug: architecture-in-the-age-of-ai
 categories: [ai]
 tags: [architecture, ai, systems, software-engineering]
 author: "Alberto Ruiz"
+published: true
 excerpt: "Artificial intelligence introduces new components and assumptions, but it does not eliminate architecture. It makes it more necessary."
 ---
 

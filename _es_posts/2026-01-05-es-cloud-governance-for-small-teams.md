@@ -6,6 +6,7 @@ slug: cloud-governance-for-small-teams
 categories: [cloud]
 tags: [gobierno, azure, cloud, costes, architecture]
 author: "Alberto Ruiz"
+published: true
 excerpt: "Cuando se habla de gobierno cloud, muchas organizaciones piensan en burocracia."
 ---
 

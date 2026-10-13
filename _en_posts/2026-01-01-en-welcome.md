@@ -6,6 +6,7 @@ slug: welcome
 categories: [blog]
 tags: [architecture, cloud, ai]
 author: "Alberto Ruiz"
+published: true
 ---
 
 This blog is a place to organise ideas and share real-world experience about **architecture, cloud, artificial intelligence and software engineering**.

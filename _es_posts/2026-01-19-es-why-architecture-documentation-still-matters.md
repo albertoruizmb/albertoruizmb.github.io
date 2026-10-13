@@ -6,6 +6,7 @@ slug: why-architecture-documentation-still-matters
 categories: [ai]
 tags: [arquitectura, documentacion, ia, sistemas, ingenieria-software]
 author: "Alberto Ruiz"
+published: true
 excerpt: "La IA acelera el desarrollo, pero también la pérdida de contexto. Sin documentación arquitectónica, los sistemas se vuelven frágiles."
 ---
 
@@ -35,4 +36,4 @@ La documentación arquitectónica no es un artefacto del pasado. Es una herramie
 
 La IA puede ayudarte a construir más rápido.  
 La documentación arquitectónica te permite construir con sentido.
- 
+

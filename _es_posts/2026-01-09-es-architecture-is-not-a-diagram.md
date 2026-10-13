@@ -6,6 +6,7 @@ slug: architecture-is-not-a-diagram
 categories: [opinion]
 tags: [arquitectura, liderazgo, decisiones]
 author: "Alberto Ruiz"
+published: true
 excerpt: "Cuando se piensa en arquitectura de software, muchas personas imaginan diagramas."
 ---
 

@@ -6,6 +6,7 @@ slug: agent-mesh-architecture
 categories: [architecture, ai]
 tags: [ai-agents, arquitectura-de-software, sistemas-distribuidos, criterio-arquitectonico]
 author: "Alberto Ruiz"
+published: true
 excerpt: "Cuando los agentes colaboran, la arquitectura deja de ser opcional."
 ---
 

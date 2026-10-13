@@ -6,6 +6,7 @@ slug: landing-zone-is-not-just-infrastructure
 categories: [cloud]
 tags: [landing-zone, azure, cloud, governance, architecture]
 author: "Alberto Ruiz"
+published: true
 excerpt: "In many cloud projects, the landing zone is treated as just a preliminary step."
 ---
 
