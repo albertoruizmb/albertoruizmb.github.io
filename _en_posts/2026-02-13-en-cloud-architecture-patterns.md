@@ -7,6 +7,8 @@ categories: [cloud, architecture]
 tags: [cloud-architecture, architecture-patterns, distributed-systems, system-design]
 author: "Alberto Ruiz"
 excerpt: "Cloud architecture patterns capture proven responses to recurring design problems and help teams build scalable, resilient, and maintainable applications."
+image: /assets/images/posts/cloud-architecture-patterns/header.webp
+image_alt: "Illustration of an architect analyzing cloud architecture patterns to design scalable and resilient distributed systems."
 published: true
 ---
 
